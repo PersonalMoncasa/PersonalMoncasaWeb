@@ -1,0 +1,177 @@
+*{
+font-family: sans-serif;
+font-weight: lighter;
+text-decoration: none;
+padding: 1%;
+margin: auto;
+}
+body {
+  background-image: radial-gradient(circle at 18% 40%, rgba(53, 53, 53,0.06) 0%, rgba(53, 53, 53,0.06) 50%,rgba(254, 254, 254,0.06) 50%, rgba(254, 254, 254,0.06) 100%),radial-gradient(circle at 66% 36%, rgba(126, 126, 126,0.06) 0%, rgba(126, 126, 126,0.06) 50%,rgba(70, 70, 70,0.06) 50%, rgba(70, 70, 70,0.06) 100%),radial-gradient(circle at 33% 100%, rgba(237, 237, 237,0.06) 0%, rgba(237, 237, 237,0.06) 50%,rgba(162, 162, 162,0.06) 50%, rgba(162, 162, 162,0.06) 100%),linear-gradient(90deg, rgb(100,99,99),rgb(100,99,99));
+  margin: 0;
+  color: rgb(255, 255, 255);
+  font-family: Arial;
+  font-weight: lighter;
+  padding: 2px;
+  font-size: large;
+}
+
+.header::after {
+  content: '';
+  height: 100vh;
+  width: 100%;
+  background-image: radial-gradient(circle at center center, rgb(15, 78, 199),rgb(21, 67, 172),rgb(12,40,123),rgb(2,12,74),rgb(0,0,0));
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: block;
+  
+}
+
+
+
+.header-content {
+  position: absolute;
+  z-index: 1;
+  top: 10%;
+  left: 50%;
+  margin-top: 90px;
+  margin-left: -200px;
+  width: 400px;
+  height: 350px;
+  text-align: center;
+  transition: all 1000ms;
+  
+}
+
+.header-content .logo {
+  height: 200px;
+  width: 200px;
+  margin: auto;
+}
+
+.title {
+  font-family: Arial;
+  font-weight: lighter;
+  font-size: 2rem;
+  padding: 15px 30px;
+  margin-top: 1rem;
+  
+}
+
+
+.header-content .text {
+  line-height: 2;
+  margin-top: 1rem;
+}
+
+.container {
+  max-width: 960px;
+  margin: auto;
+  overflow: hidden;
+  padding: 1px;
+  font-weight: lighter;
+}
+
+.grid-3 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr; /* 30px 30px 30px or repeat(3, 1fr)*/
+  grid-gap: 20px;
+}
+
+.grid-2 {
+  display: grid;
+  grid-gap: 25px;
+  grid-template-columns: repeat(2, 1fr);
+  text-decoration: none;
+  font-size: larger;
+}
+
+.text-center {
+  text-align: center;
+  margin: auto;
+  padding: 5px;
+  text-decoration: none;
+}
+
+.bg-light {
+  background-image: radial-gradient(circle at 52% 33%, rgba(17, 17, 17,0.08) 0%, rgba(17, 17, 17,0.08) 33.333%,rgba(74, 74, 74,0.08) 33.333%, rgba(74, 74, 74,0.08) 66.666%,rgba(130, 130, 130,0.08) 66.666%, rgba(130, 130, 130,0.08) 99.999%),radial-gradient(circle at 70% 65%, rgba(129, 129, 129,0.08) 0%, rgba(129, 129, 129,0.08) 33.333%,rgba(95, 95, 95,0.08) 33.333%, rgba(95, 95, 95,0.08) 66.666%,rgba(60, 60, 60,0.08) 66.666%, rgba(60, 60, 60,0.08) 99.999%),radial-gradient(circle at 97% 89%, rgba(21, 21, 21,0.08) 0%, rgba(21, 21, 21,0.08) 33.333%,rgba(89, 89, 89,0.08) 33.333%, rgba(89, 89, 89,0.08) 66.666%,rgba(156, 156, 156,0.08) 66.666%, rgba(156, 156, 156,0.08) 99.999%),linear-gradient(69deg, rgb(17, 9, 206),rgb(0, 7, 107));
+  color: rgb(255, 255, 255);
+}
+
+.bg-dark {
+  background: linear-gradient(gray,white);
+  color: #f4f4f4;
+}
+
+.seccion2 {
+
+  background-image: radial-gradient(circle at 18% 40%, rgba(53, 53, 53,0.06) 0%, rgba(53, 53, 53,0.06) 50%,rgba(254, 254, 254,0.06) 50%, rgba(254, 254, 254,0.06) 100%),radial-gradient(circle at 66% 36%, rgba(126, 126, 126,0.06) 0%, rgba(126, 126, 126,0.06) 50%,rgba(70, 70, 70,0.06) 50%, rgba(70, 70, 70,0.06) 100%),radial-gradient(circle at 33% 100%, rgba(237, 237, 237,0.06) 0%, rgba(237, 237, 237,0.06) 50%,rgba(162, 162, 162,0.06) 50%, rgba(162, 162, 162,0.06) 100%),linear-gradient(90deg, rgb(100,99,99),rgb(100,99,99));
+  padding: 1rem;
+  text-decoration: none;
+  color: #f4f4f4;
+  margin: auto;
+}
+
+.Vlink {
+  display: inline-block;
+  margin-top: 10px;
+  background-color: #f4f4f4;
+  border-radius: 25%;
+  text-shadow: #f4f4f4;
+  text-emphasis-color: blue;
+  color: blue;
+
+ 
+}
+
+.services {
+  padding: 2rem 5px;
+  
+}
+
+footer {
+  padding: 2.2rem;
+}
+
+footer p {
+  margin: 0;
+}
+
+/* RESPONSIVE */
+@media (max-width: 560px) {
+  .header::after {
+    height: 50vh;
+  }
+  
+  .header-content {
+    top: 5%;
+    margin-top: 5px;
+  }
+
+  .header-content .logo {
+    height: 140px;
+    width: 140px;
+  }
+
+  .header-content .text {
+    display: none;
+  }
+  
+  .grid-3, .grid-2 {
+    grid-template-columns: 1fr;
+  }
+
+  .services div {
+    padding: 1.4rem 1rem;
+  }
+}
+
+/* Landscape */
+@media(max-height: 500px) {
+  .header-content .title, .header-content .text {
+    display: none;
+  }
+  .header-content {
+    top: 0;
+  }
+}
